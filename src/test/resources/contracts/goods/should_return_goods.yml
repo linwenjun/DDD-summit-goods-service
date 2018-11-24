@@ -1,0 +1,8 @@
+request:
+  method: GET
+  url: /goods
+response:
+  status: 200
+  bodyFromFile: goods_response.json
+  headers:
+    Content-Type: application/json;charset=UTF-8
