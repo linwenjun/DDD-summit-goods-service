@@ -4,5 +4,10 @@ request:
 response:
   status: 200
   bodyFromFile: goods_response.json
+  matchers:
+    body:
+      - path: $[*].id
+        type: by_regex
+        predefined: number
   headers:
     Content-Type: application/json;charset=UTF-8
