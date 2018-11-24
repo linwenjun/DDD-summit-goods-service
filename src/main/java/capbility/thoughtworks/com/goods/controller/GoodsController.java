@@ -16,11 +16,16 @@ public class GoodsController {
 
     private List<Goods> goodsList = Arrays.asList(
             Goods.builder().id(1L).name("小米Mix3").build(),
-            Goods.builder().id(1L).name("Iphone XS").build()
+            Goods.builder().id(2L).name("Iphone XS").build()
     );
 
     @GetMapping()
     public List<Goods> getGoods() {
         return goodsList;
+    }
+
+    @GetMapping("/{id}")
+    public Goods getGoodsById(@PathVariable Long id) {
+        return goodsList.get(0);
     }
 }
