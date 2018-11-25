@@ -55,10 +55,10 @@ contracts {
 publishing {
 	repositories {
 		maven {
-			url mavenUrl
+			url String.valueOf(System.getenv("MAVEN_REPO"))
 			credentials {
-				username = mavenUsername
-				password = mavenPassword
+				username = String.valueOf(System.getenv("MAVEN_USER"))
+				password = String.valueOf(System.getenv("MAVEN_PASS"))
 			}
 		}
 	}
