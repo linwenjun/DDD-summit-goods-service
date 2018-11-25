@@ -2,11 +2,12 @@
 
 ## 运行步骤
 
-### 创建gradle.properties文件，定义如下变量
-```properties
-mavenUrl=url
-mavenUsername=root
-mavenPassword=pass
+### 定义如下环境变量
+```bash
+...
+export MAVEN_REPO=...
+export MAVEN_USER=...
+export MAVEN_PASS=...
 ```
 
 ### 命令
